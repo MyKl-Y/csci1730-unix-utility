@@ -1,3 +1,8 @@
+#include <unistd.h> // for read, write, close
+#include <fcntl.h>  // for file-related constants like O_RDONLY
+#include <stdlib.h> // for exit
+
+
 int main(int argc, char *argv[]) {
     // Check if there are no arguments or if '-' is provided as an argument
     if (argc == 1 || (argc == 2 && argv[1][0] == '-' && argv[1][1] == '\0')) {
